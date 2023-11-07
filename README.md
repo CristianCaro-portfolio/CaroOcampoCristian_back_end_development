@@ -5,7 +5,9 @@ Cristian Andres Caro Ocampo
 - second delivery on 13/09/2023 using file management.
 - third delivery on 25/09/2023 using Servers with Express.
 - Primera Pre Entrega 02/10/2023.
-- cuatro entregable 11/10/2023
+- cuatro entregable 11/10/2023.
+- Primera Practica Integradora 30/10/2023.
+- Seunga PreEntrega 06/11/2023
 
 important tools to try the API:
 
