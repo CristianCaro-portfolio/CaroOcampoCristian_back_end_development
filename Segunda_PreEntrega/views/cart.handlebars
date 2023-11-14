@@ -1,14 +1,11 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Cart</title>
-</head>
-<body>
-    <h1>Cart</h1>
-    <ul>
-        {{#each cart.products}}
-            <li>{{this.details.title}} - Quantity: {{this.quantity}}</li>
-        {{/each}}
-    </ul>
-</body>
-</html>
+<div>
+    {{#each carts}}
+    <p>{{this.first_name}}</p>
+    {{/each}}
+    {{#if hasPrevPage}}
+    <a href="/carts?page={{prevPage}}"><button>Anterior</button></a>
+    {{/if}}
+    {{#if hasNextPage}}
+    <a href="/carts?page={{nextPage}}"><button>Siguiente</button></a>
+    {{/if}}
+</div>

@@ -1,14 +1,11 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Products List</title>
-</head>
-<body>
-    <h1>Products</h1>
-    <ul>
-        {{#each products}}
-            <li>{{this.title}} - ${{this.price}}</li>
-        {{/each}}
-    </ul>
-</body>
-</html>
+<div>
+    {{#each products}}
+    <p>{{this.first_name}}</p>
+    {{/each}}
+    {{#if hasPrevPage}}
+    <a href="/products?page={{prevPage}}"><button>Anterior</button></a>
+    {{/if}}
+    {{#if hasNextPage}}
+    <a href="/products?page={{nextPage}}"><button>Siguiente</button></a>
+    {{/if}}
+</div>
