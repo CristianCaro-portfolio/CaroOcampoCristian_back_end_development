@@ -4,6 +4,10 @@ import cartsModel from '../models/products.js';
 
 const router = Router();
 
+router.get('/login', (req, res) => {
+    res.render('login');
+});
+
 router.get('/carts', async (req, res) => {
     const { page = 1 } = req.query;
     const { docs, hasPrevPage, hasNextPage, nextPage, prevPage } = await cartsModel.paginate({}, { limit: 5, page, lean: true });
@@ -29,5 +33,9 @@ router.get('/products', async (req, res) => {
         prevPage
     });
 });
+
+router.get('/', (req, res) => {
+    res.render('home');
+})
 
 export default router;
